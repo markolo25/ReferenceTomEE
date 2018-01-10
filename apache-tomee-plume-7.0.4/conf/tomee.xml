@@ -5,21 +5,4 @@
 
   <!-- activate next line to be able to deploy applications in apps -->
   <!-- <Deployments dir="apps" /> -->
-
-  <Resource id="jdbc/bookstoreDS" type="javax.sql.DataSource">
-        jdbcDriver=org.apache.derby.jdbc.ClientDriver
-        jtaManaged=true
-        initialSize=1
-        password=app
-        userName=app
-        jdbcUrl=jdbc:derby://localhost:1527/bookstoreDB;create=true
-  </Resource>
-  <Resource id="jdbc/carstoreDB" type="javax.sql.DataSource">
-	jdbcDriver=org.apache.derby.jdbc.ClientDriver
-        jtaManaged=true
-        initialSize=1
-        password=app
-        userName=app
-        jdbcUrl=jdbc:derby://localhost:1527/carstoreDB;create=true
-  </Resource>
 </tomee>
